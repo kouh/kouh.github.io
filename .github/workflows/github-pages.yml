@@ -2,7 +2,7 @@ name: Publish on GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -19,10 +19,13 @@ jobs:
 
       - name: Build site
         run: deno task build
-
+        
       - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v2.0.1
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          build_dir: _site
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./_site
+          external_repository: kouh/kouh.github.io
+          publish_branch: main
+          full_commit_message: update site
+          #cname: catalion.com
