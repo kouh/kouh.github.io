@@ -1,7 +1,10 @@
 ---
-layout: layout.njk
+
 ---
 
 # Catalion.com
 
 ゲームとプログラミング
+
+## 2022年
+[11月](diary/2022-11/)
