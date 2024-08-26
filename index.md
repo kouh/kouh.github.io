@@ -6,15 +6,20 @@
 
 ゲームとプログラミング
 
+## 開発中ゲーム
 
-## 作ったゲーム
+- [Dungeon Flowy](https://store.steampowered.com/app/3086520/Dungeon_Flowy/)
 
-- Bosstack
-    - [Steamストア](https://store.steampowered.com/app/2901820/Bosstack/)
+## 販売中ゲーム
+
+- [Bosstack](https://store.steampowered.com/app/2901820/Bosstack/)
 
 
-## 2024年
+## 雑記
 
+### 2024年
+
+[08月](diary/2024-08/)/
 [07月](diary/2024-07/)/
 
 [06月](diary/2024-06/)/
@@ -24,7 +29,7 @@
 [02月](diary/2024-02/)/
 [01月](diary/2024-01/)
 
-## 2023年
+### 2023年
 
 [12月](diary/2023-12/)/
 [11月](diary/2023-11/)/
@@ -40,6 +45,6 @@
 [02月](diary/2023-02/)/
 [01月](diary/2023-01/)
 
-## 2022年
+### 2022年
 [12月](diary/2022-12/)/
 [11月](diary/2022-11/)
