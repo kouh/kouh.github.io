@@ -1,0 +1,175 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif; /* A common, readable font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F2F7; /* Soft, light blue for the page background */
+    color: #4A6C7A; /* Muted dark blue-gray for general text */
+}
+
+/* Header styling */
+header {
+    background-color: #C8E6F0; /* Slightly darker blue for header */
+    color: #2F4F4F; /* Darker text for header */
+    padding: 1rem 20px; /* Add horizontal padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space out content and nav */
+    align-items: center; /* Vertically align items */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between title and tagline */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #2F4F4F;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 0.9rem; /* Smaller font size */
+    color: #5F7F8C; /* Slightly lighter text for descriptions */
+    white-space: nowrap; /* Keep text on a single line */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    max-width: 600px; /* Limit width to prevent excessive stretching */
+}
+
+header nav a {
+    color: #2F4F4F;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #007BFF; /* A slightly brighter blue on hover */
+}
+
+/* Remove section#about styling as it's no longer needed */
+section {
+    background-color: #FBFCFD; /* Very light, almost white background for sections */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Softer shadow for sections */
+}
+
+section h2 {
+    color: #3A5F6B; /* Slightly darker blue-gray for section titles */
+    border-bottom: 2px solid #C8E6F0; /* Matching border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Game list styling */
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.game-item {
+    background-color: #FFFFFF; /* White background for individual game items */
+    border: 1px solid #E0F2F7; /* Soft border matching page background */
+    border-radius: 8px;
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.game-item h3 {
+    color: #3A5F6B;
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+}
+
+.game-item p {
+    padding: 0 15px;
+    font-size: 0.95rem;
+    color: #5F7F8C; /* Slightly lighter text for descriptions */
+}
+
+.game-text-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 15px;
+}
+
+.game-text-content h3 {
+    min-height: 40px; /* Ensure consistent height for titles */
+}
+
+.game-text-content p {
+    min-height: 60px; /* Ensure consistent height for descriptions */
+}
+
+.status-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;
+    border-radius: 8px 0 8px 0; /* 親要素の角丸に合わせる */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+}
+
+.status-tag.developing {
+    background-color: #f0ad4e; /* より鮮やかなオレンジ */
+}
+
+.status-tag.released {
+    background-color: #5cb85c; /* より鮮やかなグリーン */
+}
+
+.store-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    min-height: 40px; /* Adjust based on actual link height + margin */
+}
+
+.store-links a {
+    display: inline-block;
+    background-color: #6DA0B3; /* Muted blue for store links */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.store-links a:hover {
+    background-color: #5A8C9E; /* Slightly darker blue on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #C8E6F0; /* Matching header background */
+    color: #2F4F4F;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05); /* Soft shadow */
+}
