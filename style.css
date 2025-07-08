@@ -1,28 +1,26 @@
-/* General body styling */
 body {
-    font-family: 'Arial', sans-serif; /* A common, readable font */
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #E0F2F7; /* Soft, light blue for the page background */
-    color: #4A6C7A; /* Muted dark blue-gray for general text */
+    background-color: #E0F2F7;
+    color: #4A6C7A;
 }
 
-/* Header styling */
 header {
-    background-color: #C8E6F0; /* Slightly darker blue for header */
-    color: #2F4F4F; /* Darker text for header */
-    padding: 1rem 20px; /* Add horizontal padding */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow */
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space out content and nav */
-    align-items: center; /* Vertically align items */
+    background-color: #C8E6F0;
+    color: #2F4F4F;
+    padding: 1rem 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between title and tagline */
+    gap: 20px;
 }
 
 header h1 {
@@ -33,12 +31,12 @@ header h1 {
 
 .tagline {
     margin: 0;
-    font-size: 0.9rem; /* Smaller font size */
-    color: #5F7F8C; /* Slightly lighter text for descriptions */
-    white-space: nowrap; /* Keep text on a single line */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis for overflow */
-    max-width: 600px; /* Limit width to prevent excessive stretching */
+    font-size: 0.9rem;
+    color: #5F7F8C;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 600px;
 }
 
 header nav a {
@@ -49,26 +47,24 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #007BFF; /* A slightly brighter blue on hover */
+    color: #007BFF;
 }
 
-/* Remove section#about styling as it's no longer needed */
 section {
-    background-color: #FBFCFD; /* Very light, almost white background for sections */
+    background-color: #FBFCFD;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Softer shadow for sections */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 section h2 {
-    color: #3A5F6B; /* Slightly darker blue-gray for section titles */
-    border-bottom: 2px solid #C8E6F0; /* Matching border */
+    color: #3A5F6B;
+    border-bottom: 2px solid #C8E6F0;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-/* Game list styling */
 .game-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -76,12 +72,12 @@ section h2 {
 }
 
 .game-item {
-    background-color: #FFFFFF; /* White background for individual game items */
-    border: 1px solid #E0F2F7; /* Soft border matching page background */
+    background-color: #FFFFFF;
+    border: 1px solid #E0F2F7;
     border-radius: 8px;
     text-align: center;
     padding-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -103,7 +99,7 @@ section h2 {
 .game-item p {
     padding: 0 15px;
     font-size: 0.95rem;
-    color: #5F7F8C; /* Slightly lighter text for descriptions */
+    color: #5F7F8C;
 }
 
 .game-text-content {
@@ -115,11 +111,11 @@ section h2 {
 }
 
 .game-text-content h3 {
-    min-height: 40px; /* Ensure consistent height for titles */
+    min-height: 40px;
 }
 
 .game-text-content p {
-    min-height: 60px; /* Ensure consistent height for descriptions */
+    min-height: 60px;
 }
 
 .status-tag {
@@ -127,18 +123,18 @@ section h2 {
     top: 0;
     left: 0;
     padding: 5px 10px;
-    border-radius: 8px 0 8px 0; /* 親要素の角丸に合わせる */
+    border-radius: 8px 0 8px 0;
     font-size: 0.9rem;
     font-weight: bold;
     color: white;
 }
 
 .status-tag.developing {
-    background-color: #f0ad4e; /* より鮮やかなオレンジ */
+    background-color: #f0ad4e;
 }
 
 .status-tag.released {
-    background-color: #5cb85c; /* より鮮やかなグリーン */
+    background-color: #5cb85c;
 }
 
 .store-links {
@@ -146,12 +142,12 @@ section h2 {
     display: flex;
     justify-content: center;
     gap: 10px;
-    min-height: 40px; /* Adjust based on actual link height + margin */
+    min-height: 40px;
 }
 
 .store-links a {
     display: inline-block;
-    background-color: #6DA0B3; /* Muted blue for store links */
+    background-color: #6DA0B3;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -161,30 +157,36 @@ section h2 {
 }
 
 .store-links a:hover {
-    background-color: #5A8C9E; /* Slightly darker blue on hover */
+    background-color: #5A8C9E;
 }
 
-/* Footer styling */
+#community {
+    text-align: center;
+}
+
+#community .social-links a {
+    display: inline-block;
+    background-color: #5865F2;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+#community .social-links a:hover {
+    background-color: #4752C4;
+    transform: translateY(-2px);
+}
+
 footer {
-    background-color: #C8E6F0; /* Matching header background */
+    background-color: #C8E6F0;
     color: #2F4F4F;
     text-align: center;
     padding: 1rem 0;
     margin-top: 30px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.05); /* Soft shadow */
-}
-
-.social-links {
-    margin-bottom: 1rem;
-}
-
-.social-links a {
-    color: #2F4F4F;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-.social-links a:hover {
-    color: #007BFF; /* A slightly brighter blue on hover */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }
