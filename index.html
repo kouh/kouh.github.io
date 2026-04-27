@@ -1,64 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalion - インディーゲーム開発チーム</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catalion - インディーゲーム開発</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Quicksand:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
             <div class="header-content">
+                <p class="eyebrow">INDIE GAME DEVELOPER</p>
                 <h1>Catalion</h1>
-                <p class="tagline">ターン制のローグライクやRPGをつくるインディーゲーム開発チーム</p>
+                <p class="tagline"></p>
+                <div class="hero-badges" aria-label="サークルの特徴">
+                    反射神経不要でじっくり考えることができるターン制のRPGやローグライクを中心に開発しています。
+                </div>
             </div>
         </header>
 
-    <main>
+        <main>
+            <section id="games">
+                <div class="section-heading">
+                    <p class="section-label">Works</p>
+                    <h2>ゲーム一覧</h2>
+                    <p class="section-copy"></p>
+                </div>
+                <div class="game-list">
+                    <div class="game-item">
+                        <div class="status-tag developing">発売中</div>
+                        <img
+                            src="images/seal_of_magic.jpg"
+                            alt="シールオブマジックのスクリーンショット"
+                        />
+                        <div class="game-text-content">
+                            <h3>シールオブマジック</h3>
+                            <p>
+                                シールを貼って味方を強化し立ちはだかる敵をなぎ倒す新感覚のオートバトル・ローグライク
+                            </p>
+                        </div>
+                        <div class="store-links">
+                            <a
+                                href="https://store.steampowered.com/app/3656060/"
+                                target="_blank"
+                                >Steam</a
+                            >
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="status-tag released">発売中</div>
+                        <img
+                            src="images/dungeon_flowy.png"
+                            alt="Dungeon Flowyのスクリーンショット"
+                        />
+                        <div class="game-text-content">
+                            <h3>Dungeon Flowy</h3>
+                            <p>
+                                好きなジョブで6人パーティを組みダンジョンにもぐるオートバトルxハクスラRPG。
+                            </p>
+                        </div>
+                        <div class="store-links">
+                            <a
+                                href="https://store.steampowered.com/app/3086520/"
+                                target="_blank"
+                                >Steam</a
+                            >
+                            <a
+                                href="https://www.dlsite.com/home/work/=/product_id/RJ01283905.html"
+                                target="_blank"
+                                >DLsite</a
+                            >
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="status-tag released">発売中</div>
+                        <img
+                            src="images/bosstack.png"
+                            alt="Bosstackのスクリーンショット"
+                        />
+                        <div class="game-text-content">
+                            <h3>Bosstack</h3>
+                            <p>
+                                ジョブとスキルを組み合わせボスと戦うコマンドバトル
+                            </p>
+                        </div>
+                        <div class="store-links">
+                            <a
+                                href="https://store.steampowered.com/app/2901820/"
+                                target="_blank"
+                                >Steam</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="games">
-            <h2>ゲーム一覧</h2>
-            <div class="game-list">
-                <div class="game-item">
-                    <div class="status-tag developing">開発中</div>
-                    <img src="images/seal_of_magic.png" alt="シールオブマジックのスクリーンショット">
-                    <div class="game-text-content">
-                        <h3>シールオブマジック</h3>
-                        <p>シールでスコアを稼ぐローグライク</p>
-                    </div>
-                    <div class="store-links">
-                        <a href="https://store.steampowered.com/app/3656060/" target="_blank">Steam</a>
+            <section id="community">
+                <div class="section-heading">
+                    <p class="section-label">Community</p>
+                    <h2>お知らせ・交流</h2>
+                    <!--<p class="section-copy">
+                        制作の近況や更新情報は、Discord と X で発信しています。
+                    </p>-->
+                </div>
+                <div class="community-list">
+                    <!--<div class="community-link-item">
+                        <a
+                            class="community-link-button"
+                            href="#"
+                            aria-label="Discord に参加"
+                            >Discord</a
+                        >
+                        <span class="community-link-note"
+                            >開発の近況やちょっとした交流</span
+                        >
+                    </div>-->
+                    <div class="community-link-item">
+                        <a
+                            class="community-link-button"
+                            href="https://x.com/ankouh2"
+                            aria-label="X アカウントを見る"
+                            >X</a
+                        >
+                        <span class="community-link-note"
+                            >制作や日々の投稿</span
+                        >
                     </div>
                 </div>
-                <div class="game-item">
-                    <div class="status-tag released">発売中</div>
-                    <img src="images/dungeon_flowy.png" alt="Dungeon Flowyのスクリーンショット">
-                    <div class="game-text-content">
-                        <h3>Dungeon Flowy</h3>
-                        <p>好きなジョブで6人パーティを組みダンジョンにもぐるオートバトルxハクスラRPG。</p>
-                    </div>
-                    <div class="store-links">
-                        <a href="https://store.steampowered.com/app/3086520/" target="_blank">Steam</a>
-                        <a href="https://www.dlsite.com/home/work/=/product_id/RJ01283905.html" target="_blank">DLsite</a>
-                    </div>
-                </div>
-                <div class="game-item">
-                    <div class="status-tag released">発売中</div>
-                    <img src="images/bosstack.png" alt="Bosstackのスクリーンショット">
-                    <div class="game-text-content">
-                        <h3>Bosstack</h3>
-                        <p>ジョブとスキルを組み合わせボスと戦うコマンドバトル</p>
-                    </div>
-                    <div class="store-links">
-                        <a href="https://store.steampowered.com/app/2901820/" target="_blank">Steam</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2025 Catalion</p>
-    </footer>
-</body>
+        <footer>
+            <p>&copy; <span id="current-year"></span> Catalion</p>
+            <p class="footer-note"></p>
+        </footer>
+        <script>
+            document.getElementById("current-year").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
 </html>
